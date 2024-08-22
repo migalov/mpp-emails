@@ -1,7 +1,3 @@
----
-import Header from "./components/Header.astro";
----
-
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
@@ -144,6 +140,10 @@ import Header from "./components/Header.astro";
 
     <center style="width: 100%;table-layout: fixed; padding-top: 20px; padding-bottom: 20px;">
       <div style="max-width: 600px;background-color: #fafdfe;box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+        <!-- Прехедер -->
+        <div style="font-size:0;line-height: 1px;mso-line-height-rule:exactly;display: none;max-width:0;opacity:0;overflow:hidden;mso-hide:all;">
+          Предехер
+        </div>
         <!--[if (gte mso 9) | (IE)]>
           <table width="600" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
           <tr>
@@ -151,9 +151,199 @@ import Header from "./components/Header.astro";
         <![endif]-->
         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #fafdfe;color: #000000;Margin:0;padding:0;max-width: 600px;width:100%;font-family: 'Montserrat', Arial, sans-serif, Helvetica;">
 
-          <Header />
+          <!-- Здесь секции письма -->
 
-          <slot />
+
+
+            <!-- LOGO SECTION -->
+            <tr>
+                <td>
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                            <td align="center" style="padding: 24px 50px 12px 50px">
+                                <a href="https://myphotopages.ru" target="_blank" rel="noopener">
+                                    <img width="150" class="light-img" src="https://static.wow2print.com/storage/445/content/image/34793135366c496139680c0.31598241.png" alt="МоиФотоСтраницы. Печатаем фотоистории.">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 12px 40px 12px 40px" class="mobile-col-padding">
+                                <h1 style="Margin: 0; font-family: 'Montserrat', Verdana, sans-serif, Arial, Helvetica !important; margin: 0;font-weight: 700; font-size: 18px;">Здраствуйте, пользователь!</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 12px 39px 12px 39px" class="mobile-col-padding">
+                                <p style="Margin: 0; font-family: 'Montserrat', Verdana, sans-serif, Arial, Helvetica !important; font-size: 14px; font-style: normal; font-weight: 400; line-height: 22px; color: rgba(0,0,0,.8)">Вы создали учетную запись на сайте.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 12px 39px 12px 39px" class="mobile-col-padding">
+                                <p style="Margin: 0; font-family: 'Montserrat', Verdana, sans-serif, Arial, Helvetica !important; font-size: 14px; font-style: normal; font-weight: 400; line-height: 22px; color: rgba(0,0,0,.8);">Для входа в свой личный кабинет подтвердите Ваш электронный адрес, нажав на кнопку «Перейти в личный кабинет» ниже.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 39px 12px 39px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tr>
+                                        <td align="center" style="background: #F3704E; border-radius: 50px;">
+                                            <a href="https://myphotopages.ru.profile" target="_blank" rel="nooper" style="
+                                                background: #F3704E;
+                                                border-radius: 50px;
+                                                border: 1px solid #F3704E;
+                                                font-weight: 700;
+                                                font-size: 14px;
+                                                line-height: 157%;
+                                                text-decoration: none;
+                                                display: inline-block;
+                                                text-align: center;
+                                                padding: 10px 40px 10px 40px;
+                                                color: #FFFFFF;
+                                            ">Перейти в личный кабинет</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- TWO COLUMNS -->
+            <tr>
+                <td align="center" style="padding: 0 28px; font-size: 0" class="mobile-padding two-columns">
+                    <!--[if (gte mso 9) | (IE)]>
+                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                            <tr>
+                                <td>
+                    <![endif]-->
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" class="column" style="vertical-align: middle; width: 100%; max-width: 270px; display: inline-block">
+                                        <tr>
+                                            <td style="padding: 12px 11px 12px 11px;" class="mobile-col-padding">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                    <tr>
+                                                        <td>
+                                                            <table>
+                                                              <tr>
+                                                                <td><img src="https://raw.githubusercontent.com/konsav/email-templates/master/images/hero-grid.png" width="40" border="0" alt="Preview 1"></td>
+                                                                <td>123123</td>
+                                                              </tr>
+                                                            </table>
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                    <!--[if (gte mso 9) | (IE)]>
+                                </td>
+                                <td>
+                    <![endif]-->
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" class="column" style="vertical-align: middle; width: 100%; max-width: 270px; display: inline-block">
+                                        <tr>
+                                            <td style="padding: 12px 11px 12px 11px;" class="mobile-col-padding">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                    <tr>
+                                                        <td style="padding: 0 0 16px 0;">
+                                                            <h2 style="font-family: 'Montserrat', Verdana, sans-serif, Arial, Helvetica !important; margin: 0; font-weight: 700; font-size: 16px; line-height: 122%; color: #000000">Lorem ipsum</h2>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 0 0 16px 0;">
+                                                            <p style="font-family: 'Montserrat', Verdana, sans-serif, Arial, Helvetica !important; margin: 0; font-weight: 400; font-size: 14px; line-height: 157%; color: #000000">Mollitia fugit facere dolorum alias a nostrum error non quas obcaecati debitis? Repellat quisquam reprehenderit aliquid magni sint, nemo odio delectus amet.</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                    <!--[if (gte mso 9) | (IE)]>
+                                </td>
+                            </tr>
+                        </table>          
+                    <![endif]-->
+                </td>
+            </tr>
+            
+
+            <!-- TEXT SECTION -->
+            <tr>
+                <td style="padding: 20px 20px 20px 20px; background-color: #CECFDF" bgcolor="#CECFDF">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                            <td style="padding: 12px 39px 12px 39px;" class="mobile-col-padding">
+                                <h2 style="font-family: 'Montserrat', Verdana, sans-serif, Arial, Helvetica !important; margin: 0; font-weight: 500; font-size: 16px; line-height: 157%; color: #000000; text-align: center;">Вопросы и ответы</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0 39px 24px 39px;" class="mobile-col-padding">
+                                <p style="font-family: 'Montserrat', Verdana, sans-serif, Arial, Helvetica !important; margin: 0; font-weight: 400; font-size: 14px; line-height: 157%; color: #000000">Мы подготовили для вас перечень часто задаваемых вопросов. Очень вероятно, что ваш вопрос входит в этот перечень и вы сможете найти нужный вам ответ.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tr>
+                                        <td align="center" style="background: #F3704E; border-radius: 50px">
+                                            <a href="" target="_blank" rel="nooper" style="
+                                                background: #F3704E;
+                                                border-radius: 50px;
+                                                border: 1px solid #F3704E;
+                                                font-weight: 700;
+                                                font-size: 14px;
+                                                line-height: 157%;
+                                                text-decoration: none;
+                                                display: inline-block;
+                                                text-align: center;
+                                                padding: 10px 40px 10px 40px;
+                                                color: #FFFFFF;
+                                            ">Посмотреть FAQ</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>                    
+                </td>
+            </tr>
+
+
+            <!-- TEXT WITH IMAGE SECTION -->
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                            <td align="center" style="padding: 12px 39px 24px 39px;" class="mobile-col-padding">
+                                <img src="https://raw.githubusercontent.com/konsav/email-templates/master/images/hero-grid.png" alt="Preview" border="0" width="523px" class="full-width" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 12px 39px 12px 39px;" class="mobile-col-padding">
+                                <p style="font-family: 'Montserrat', Verdana, sans-serif, Arial, Helvetica !important; margin: 0; font-weight: 400; font-size: 14px; line-height: 157%; color: #000000">Lorem ipsum dolor sit amet <a href="/#" target="_blank" rel="noopener" style="text-decoration: underline; color:#F3704E; margin: 0; font-weight: 400; font-size: 14px; line-height: 157%;">consectetur</a> adipisicing elit. Dolor voluptates quo nisi recusandae animi commodi blanditiis aperiam laborum, cupiditate perspiciatis nesciunt culpa eveniet, voluptatum at optio adipisci, repellendus beatae ipsa?</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 12px 39px 12px 39px;" class="mobile-col-padding">
+                                <p style="font-family: 'Montserrat', Verdana, sans-serif, Arial, Helvetica !important; margin: 0; font-weight: 400; font-size: 14px; line-height: 157%; color: #000000">Lorem ipsum dolor sit amet <a href="/#" target="_blank" rel="noopener" style="text-decoration: underline; color:#F3704E; margin: 0; font-weight: 400; font-size: 14px; line-height: 157%;">consectetur</a> adipisicing elit. Dolor voluptates quo nisi recusandae animi commodi blanditiis aperiam laborum,<br />cupiditate perspiciatis nesciunt culpa eveniet, voluptatum at optio adipisci, repellendus beatae ipsa?</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+
+            <!-- FOOTER SECTION -->
+            <tr>
+                <td>
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                            <td align="center" style="padding: 20px 0 20px 0;">
+                                <p style="font-family: 'Montserrat', Verdana, sans-serif, Arial, Helvetica !important; margin: 0; font-size: 10px; line-height: 12px; font-weight: 400;">С 2011, ООО «АртСервис-Дизайн»</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
 
         </table>
         <!--[if (gte mso 9) | (IE)]>

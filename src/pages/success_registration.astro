@@ -1,0 +1,295 @@
+---
+import Button from "./components/Button.astro";
+import Footer from "./components/Footer.astro";
+import ImageMail from "./components/ImageMail.astro";
+import Space from "./components/Space.astro";
+import H2 from "./components/Typography/H2.astro";
+import Link from "./components/Typography/Link.astro";
+import P from "./components/Typography/P.astro"
+import CardPage from "./sections/CardPage.astro";
+import FAQ from "./sections/FAQ.astro";
+import Preheader from "./components/Preheader.astro";
+import H1 from "./components/Typography/H1.astro";
+import TextRow from "./components/TextRow.astro";
+---
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+      table {
+        border-spacing: 0;
+        mso-cellspacing: 0;
+        mso-padding-alt: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      #outlook a {
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .full-width {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .mobile-padding {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+
+        .mobile-col-padding {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+      }
+
+      @media screen and (max-width: 399.98px) {
+        br {
+          display: none !important;
+        }
+
+        .two-columns .column {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .two-columns.mobile-padding {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        .two-columns .column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .three-columns .column {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .three-columns .column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+				.four-columns .column {
+					width: 100% !important;
+					max-width: 100% !important;
+				}
+
+				.four-columns .column img {
+					width: 100% !important;
+					max-width: 100% !important;
+				}
+      }
+
+      body, table, td, p, a { font-family: "Montserrat", Verdana, sans-serif, Arial, Helvetica !important;}
+
+
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+
+      /* @media (prefers-color-scheme: dark) {
+        table,
+        td {
+          background-color: #06080B !important;
+        }
+
+        h1,
+        h2,
+        p {
+          color: #ffffff !important;
+        }
+      } */
+
+    </style>
+    <!--[if (gte mso 9) | (IE)]>
+      <style type="text/css">
+        table {
+          border-collapse: collapse !important;
+        }
+      </style>
+    <![endif]-->
+
+    <!--[if (gte mso 9) | (IE)]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+
+  </head>
+  <body style="Margin:0; padding:0;min-width:100%;">
+    <!--[if (gte mso 9) | (IE)]>
+      <style type="text/css">
+        body { background-color: #dde0e1 !important;}
+        body, table, td, p, a { font-family: "Montserrat", Verdana, sans-serif, Arial, Helvetica !important;}
+      </style>
+    <![endif]-->
+
+    <center style="width: 100%;table-layout: fixed; padding-top: 0; padding-bottom: 0;">
+      <div style="max-width: 600px;background-color: #FFFFFF;box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+        <!-- Прехедер -->
+        <Preheader>
+          Регистрания прошла успешно 👍 Подтвердите регистрацию!
+        </Preheader>
+        <!--[if (gte mso 9) | (IE)]>
+          <table width="600" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+          <tr>
+          <td>
+        <![endif]-->
+        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #fafdfe;color: #000000;Margin:0;padding:0;max-width: 600px;width:100%;font-family: 'Montserrat', Arial, sans-serif, Helvetica;">
+
+          <!-- Здесь секции письма -->
+
+
+
+            <!-- LOGO SECTION -->
+            <tr>
+                <td>
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                            <td align="center" style="padding: 24px 50px 12px 50px">
+                                <a href="https://myphotopages.ru" target="_blank" rel="noopener">
+                                    <img width="150" class="light-img" src="https://static.wow2print.com/storage/445/content/image/34793135366c496139680c0.31598241.png" alt="МоиФотоСтраницы. Печатаем фотоистории.">
+                                </a>
+                            </td>
+                        </tr>
+                        <TextRow>
+                            <H1>Здраствуйте, пользователь!</H1>
+                        </TextRow>
+                        <TextRow>
+                            <P>Вы создали учетную запись на сайте.</P>
+                        </TextRow>
+                        <TextRow>
+                            <P>Для входа в свой личный кабинет подтвердите Ваш электронный адрес, нажав на кнопку «Перейти в личный кабинет» ниже.</P>
+                        </TextRow>
+                        <tr>
+                            <td style="padding: 12px 39px 12px 39px">
+                                <Button href="https://myphotopages.ru/profile">Перейти в личный кабинет</Button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <Space size="20" />
+
+
+
+            <!-- TEXT SECTION -->
+            <FAQ />
+
+            <Space size="20" />
+
+            <tr>
+                <td>
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                            <td align="left" style="padding: 12px 40px 12px 40px" class="mobile-col-padding">
+                                <H2>На сайте</H2>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- TWO COLUMNS -->
+            <tr>
+                <td align="center" style="padding: 0 28px; font-size: 0" class="mobile-padding two-columns">
+                    <!--[if (gte mso 9) | (IE)]>
+                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                            <tr>
+                                <td>
+                    <![endif]-->
+                        <CardPage
+                            href="https://myphotopages.ru/about-us"
+                            src="https://static.wow2print.com/storage/445/content/image/26020392766c2f21bca5e01.90985489.png"
+                            title="О нас"
+                        >
+                        <P size="12px" lineHeight="15px">О команде, компании и методах производства</P>
+                    </CardPage>
+                    <!--[if (gte mso 9) | (IE)]>
+                                </td>
+                                <td>
+                    <![endif]-->
+                        <CardPage
+                            href="https://myphotopages.ru/blog"
+                            src="https://static.wow2print.com/storage/445/content/image/97314971266c2f21d2ca621.20269366.png"
+                            title="Блог"
+                        ><P size="12px" lineHeight="15px">Советы, рекомендации и интервью с блоггерами</P></CardPage>
+                    <!--[if (gte mso 9) | (IE)]>
+                                </td>
+                                <td>
+                    <![endif]-->
+                    <CardPage
+                        src="https://static.wow2print.com/storage/445/content/image/145629305266c2f21eaefdd0.53342287.png"
+                        title="Почта"
+                        href="mailto:support@myphotopagas.ru"
+                    >
+                        <P size="12px" lineHeight="15px"><span style="font-size: inherit; color: #000000!important;">support@myphotopagas.ru</span></P>
+                        <P></P>
+                    </CardPage>
+                <!--[if (gte mso 9) | (IE)]>
+                                </td>
+                                <td>
+                    <![endif]-->
+                    <CardPage
+                        src="https://static.wow2print.com/storage/445/content/image/96051289166c2f21db05a88.57919842.png"
+                        title="Телефон"
+                        href="tel:88007750861"
+                    >
+                        <P size="12px" lineHeight="15px"><span style="font-size: inherit; color: #000000!important;">8 (800) 775-0861</span></P>
+                        <P></P>
+                    </CardPage>
+
+                    <!--[if (gte mso 9) | (IE)]>
+                                </td>
+                            </tr>
+                        </table>          
+                    <![endif]-->
+                </td>
+            </tr>
+
+            <Space size="20" />
+            
+
+            <!-- FOOTER SECTION -->
+            <Footer />
+
+        </table>
+        <!--[if (gte mso 9) | (IE)]>
+          </td>
+          </tr>
+          </table>
+        <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>

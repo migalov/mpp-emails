@@ -1,0 +1,12 @@
+---
+const { href, underline = true, color = true } = Astro.props;
+---
+
+<a target="_blank" href={href} style={`
+    font-weight: inherit!important;
+    font-size: inherit!important;
+    text-decoration: ${!underline && "none"};
+    color: ${color == true ? "#F3704E" : "#000000" }
+`}>
+    <slot />
+</a>

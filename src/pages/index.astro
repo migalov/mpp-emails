@@ -9,6 +9,7 @@ import TwoColumns from "./components/TwoColumns.astro"
 import H1 from "./components/Typography/H1.astro";
 import P from "./components/Typography/P.astro";
 import BaseLayout from "./layout.astro";
+import CardPage from "./sections/CardPage.astro";
 import FAQ from "./sections/FAQ.astro";
 ---
 
@@ -28,18 +29,72 @@ import FAQ from "./sections/FAQ.astro";
             </TextRow>
             <TextRow>
                 <P>Для входа в свой личный кабинет подтвердите Ваш электронный адрес, нажав на кнопку «Перейти в личный кабинет» ниже.</P>
-            </TextRow>
-
+            </TextRow>    
             <tr>
                 <td style="padding: 12px 39px 12px 39px">
                     <Button href="https://myphotopages.ru/">
                         Перейти в личный кабинет
                     </Button>
                 </td>
-            </tr>
+            </tr>   
+        </Table>
+
+
             <Space size="20" />
             <FAQ />
-        </Table>
+
+            <!-- TWO COLUMNS -->
+            <tr>
+                <td align="center" style="padding: 0 28px; font-size: 0" class="mobile-padding two-columns">
+                    <!--[if (gte mso 9) | (IE)]>
+                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                            <tr>
+                                <td>
+                    <![endif]-->
+                        <CardPage
+                            src="https://static.wow2print.com/storage/445/content/image/26020392766c2f21bca5e01.90985489.png"
+                            href="https://myphotopages.ru/about-us"
+                            title="О нас"
+                            description="О команде, компании и методах производства"
+                        />
+                    <!--[if (gte mso 9) | (IE)]>
+                                </td>
+                                <td>
+                    <![endif]-->
+                        <CardPage
+                            src="https://static.wow2print.com/storage/445/content/image/97314971266c2f21d2ca621.20269366.png"
+                            href="https://myphotopages.ru/blog"
+                            title="Блог"
+                            description="Советы, рекомендации и интервью с блоггерами"
+                        />
+                                <!--[if (gte mso 9) | (IE)]>
+                                </td>
+                                <td>
+                    <![endif]-->
+                        <CardPage
+                            src="https://static.wow2print.com/storage/445/content/image/145629305266c2f21eaefdd0.53342287.png"
+                            href="mailto:support@myphotopages.ru"
+                            title="Техподдержка"
+                            description="support@myphotopages.ru"
+                        />
+                    <!--[if (gte mso 9) | (IE)]>
+                                </td>
+                                <td>
+                    <![endif]-->
+                        <CardPage
+                            src="https://static.wow2print.com/storage/445/content/image/96051289166c2f21db05a88.57919842.png"
+                            href="tel:88007750861"
+                            title="Мы на связи"
+                            description="8 (800) 775 08 61"
+                        />
+                    <!--[if (gte mso 9) | (IE)]>
+                                </td>
+                            </tr>
+                        </table>          
+                    <![endif]-->
+                </td>
+            </tr>
+
 
 
 </BaseLayout>

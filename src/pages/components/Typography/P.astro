@@ -1,9 +1,12 @@
-<p style="
+---
+const {size = "14px", lineHeight = "22px"} = Astro.props;
+---
+<p style=`
     Margin: 0;
     font-family: 'Montserrat', Verdana, sans-serif, Arial, Helvetica !important;
-    font-size: 14px;
+    font-size: ${size};
     font-style: normal;
     font-weight: 400;
-    line-height: 22px;
-    color: rgba(0,0,0,.8)
-"><slot /></p>
+    line-height: ${lineHeight};
+    color: #000000
+`><slot /></p>
