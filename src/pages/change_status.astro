@@ -1,0 +1,149 @@
+---
+import Button from "../components/Button.astro";
+import Footer from "../components/Footer.astro";
+import Space from "../components/Space.astro";
+import H2 from "../components/Typography/H2.astro";
+import P from "../components/Typography/P.astro"
+import CardPage from "../sections/CardPage.astro";
+import FAQ from "../sections/FAQ.astro";
+import Preheader from "../components/Preheader.astro";
+import H1 from "../components/Typography/H1.astro";
+import TextRow from "../components/TextRow.astro";
+import BaseLayout from "../layout.astro";
+---
+
+<BaseLayout>
+    <!-- Прехедер -->
+    <Preheader>
+    </Preheader>
+    <!--[if (gte mso 9) | (IE)]>
+      <table width="600" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+      <td>
+    <![endif]-->
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #ffffff;color: #000000;Margin:0;padding:0;max-width: 600px;width:100%;font-family: 'Montserrat', Arial, sans-serif, Helvetica!important;">
+
+      <!-- Здесь секции письма -->
+
+
+
+        <!-- LOGO SECTION -->
+        <tr>
+            <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                        <td align="center" style="padding: 24px 10px 12px 10px">
+                            <a href="https://myphotopages.ru" target="_blank" rel="noopener">
+                                <img width="150" class="light-img" src="https://static.wow2print.com/storage/445/content/image/34793135366c496139680c0.31598241.png" alt="МоиФотоСтраницы. Печатаем фотоистории.">
+                            </a>
+                        </td>
+                    </tr>
+                    <TextRow>
+                        <H1>Здраствуйте, пользователь!</H1>
+                    </TextRow>
+                    <TextRow>
+                        <P>Статус вашего заказа &numero; 12345 изменен на <b>"Какой-то статус"</b>.</P>
+                    </TextRow>
+                    <TextRow>
+                        <P>Проследить за статусом заказа можно в личном кабинете. Если заказ оплачен и передан в транспортную компанию, ему присваивается трек-номер.</P>
+                    </TextRow>
+                    <tr>
+                        <td style="padding: 12px 20px 12px 20px">
+                            <Button href="https://myphotopages.ru/profile">Перейти в личный кабинет</Button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <Space size="20" />
+
+
+
+        <!-- TEXT SECTION -->
+        <FAQ />
+
+        <Space size="20" />
+
+        <tr>
+            <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                        <td align="left" style="padding: 12px 20px 12px 20px" class="mobile-col-padding">
+                            <H2>На сайте</H2>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- TWO COLUMNS -->
+        <tr>
+            <td align="center" style="padding: 0 14px; font-size: 0" class="mobile-padding two-columns">
+                <!--[if (gte mso 9) | (IE)]>
+                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                            <td>
+                <![endif]-->
+                    <CardPage
+                        href="https://myphotopages.ru/about-us"
+                        src="https://static.wow2print.com/storage/445/content/image/26020392766c2f21bca5e01.90985489.png"
+                        title="О нас"
+                    >
+                    <P size="12px" lineHeight="15px">О команде, компании и методах производства</P>
+                </CardPage>
+                <!--[if (gte mso 9) | (IE)]>
+                            </td>
+                            <td>
+                <![endif]-->
+                    <CardPage
+                        href="https://myphotopages.ru/blog"
+                        src="https://static.wow2print.com/storage/445/content/image/97314971266c2f21d2ca621.20269366.png"
+                        title="Блог"
+                    ><P size="12px" lineHeight="15px">Советы, рекомендации и интервью с блоггерами</P></CardPage>
+                <!--[if (gte mso 9) | (IE)]>
+                            </td>
+                            <td>
+                <![endif]-->
+                <CardPage
+                    src="https://static.wow2print.com/storage/445/content/image/145629305266c2f21eaefdd0.53342287.png"
+                    title="Почта"
+                    href="mailto:support@myphotopagas.ru"
+                >
+                    <P size="12px" lineHeight="15px"><span style="font-size: inherit; color: #000000!important;">support@myphotopagas.ru</span></P>
+                    <P></P>
+                </CardPage>
+            <!--[if (gte mso 9) | (IE)]>
+                            </td>
+                            <td>
+                <![endif]-->
+                <CardPage
+                    src="https://static.wow2print.com/storage/445/content/image/96051289166c2f21db05a88.57919842.png"
+                    title="Телефон"
+                    href="tel:88007750861"
+                >
+                    <P size="12px" lineHeight="15px"><span style="font-size: inherit; color: #000000!important;">8 (800) 775-0861</span></P>
+                    <P></P>
+                </CardPage>
+
+                <!--[if (gte mso 9) | (IE)]>
+                            </td>
+                        </tr>
+                    </table>          
+                <![endif]-->
+            </td>
+        </tr>
+
+        <Space size="20" />
+        
+
+        <!-- FOOTER SECTION -->
+        <Footer />
+
+    </table>
+    <!--[if (gte mso 9) | (IE)]>
+      </td>
+      </tr>
+      </table>
+    <![endif]-->
+</BaseLayout>

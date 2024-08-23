@@ -1,0 +1,37 @@
+---
+import Button from "../components/Button.astro";
+import Footer from "../components/Footer.astro";
+import Space from "../components/Space.astro";
+import H2 from "../components/Typography/H2.astro";
+import P from "../components/Typography/P.astro"
+import CardPage from "../sections/CardPage.astro";
+import FAQ from "../sections/FAQ.astro";
+import Preheader from "../components/Preheader.astro";
+import H1 from "../components/Typography/H1.astro";
+import TextRow from "../components/TextRow.astro";
+import BaseLayout from "../layout.astro";
+---
+
+<BaseLayout>
+    <!-- Прехедер -->
+    <Preheader>
+    </Preheader>
+    <!--[if (gte mso 9) | (IE)]>
+      <table width="600" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+      <td>
+    <![endif]-->
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #ffffff;color: #000000;Margin:0;padding:0;max-width: 600px;width:100%;font-family: 'Montserrat', Arial, sans-serif, Helvetica!important;">
+
+      <!-- Здесь секции письма -->
+
+        <!-- FOOTER SECTION -->
+        <Footer />
+
+    </table>
+    <!--[if (gte mso 9) | (IE)]>
+      </td>
+      </tr>
+      </table>
+    <![endif]-->
+</BaseLayout>

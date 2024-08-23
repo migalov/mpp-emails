@@ -1,0 +1,168 @@
+.mpp-table[data-astro-cid-oobbwe7p] {
+    width: 100%
+}
+
+.mpp-table[data-astro-cid-oobbwe7p],
+.mpp-table[data-astro-cid-oobbwe7p] th[data-astro-cid-oobbwe7p],
+.mpp-table[data-astro-cid-oobbwe7p] td[data-astro-cid-oobbwe7p] {
+    border: 1px solid rgb(240, 240, 240);
+    border-collapse: collapse
+}
+
+@media (width < 540px) {
+    .mpp-table[data-astro-cid-oobbwe7p] {
+        font-size: 90%;
+        border: 0
+    }
+}
+
+@media (width < 400px) {
+    .mpp-table[data-astro-cid-oobbwe7p] {
+        font-size: 80%
+    }
+}
+
+.mpp-table[data-astro-cid-oobbwe7p] th[data-astro-cid-oobbwe7p],
+.mpp-table[data-astro-cid-oobbwe7p] td[data-astro-cid-oobbwe7p] {
+    text-align: center;
+    padding: .45em
+}
+
+.mpp-table[data-astro-cid-oobbwe7p] tbody[data-astro-cid-oobbwe7p] td[data-astro-cid-oobbwe7p] {
+    width: 33.333%
+}
+
+.mpp-table[data-astro-cid-oobbwe7p] tr[data-astro-cid-oobbwe7p]:nth-child(2n) td[data-astro-cid-oobbwe7p] {
+    background-color: #f0f0f066
+}
+
+.mpp-table-head--violet[data-astro-cid-oobbwe7p] {
+    background-color: var(--lavandaColor)
+}
+
+.mpp-table-head--green[data-astro-cid-oobbwe7p] {
+    background-color: var(--greenColor)
+}
+
+.mpp-banner-type-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem
+}
+
+.mpp-banner-type-4 :is(p, li, strong) {
+    font-size: .875rem
+}
+
+.mpp-banner-type-4 li {
+    padding: 0 0 0 1em;
+    position: relative;
+    list-style-type: none !important
+}
+
+.mpp-banner-type-4 li:before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 3px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: var(--blackColor)
+}
+
+.mpp-banner-type-4 :is(img, picture) {
+    grid-area: auto/span 2;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    max-height: 350px
+}
+
+@media (width > 992px) {
+    .mpp-banner-type-4 :is(img, picture) {
+        max-height: 410px;
+        object-position: center
+    }
+}
+
+.mpp-banner-type-4 h1 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0 0 1rem
+}
+
+@media (width > 768px) {
+    .mpp-banner-type-4 {
+        gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2rem 0 0
+    }
+}
+
+@media (width > 992px) {
+    .mpp-banner-type-4 {
+        gap: 2rem
+    }
+}
+
+.mpp-disc-prom p,
+.mpp-disc-prom strong {
+    font-size: .875rem
+}
+
+.mpp-disc-prom p {
+    font-weight: 500
+}
+
+.mpp-disc-prom strong,
+.mpp-disc-prom .mpp-disc-prom__price {
+    font-weight: 700
+}
+
+.mpp-disc-prom--green,
+.mpp-disc-prom--violet {
+    background-color: var(--lavandaColor)
+}
+
+.mpp-disc-prom--orange {
+    background-color: #f8714c66
+}
+
+.mpp-disc-prom {
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
+    padding: 1.5rem;
+    border-radius: 15px
+}
+
+.mpp-disc-prom p {
+    margin: 0;
+}
+
+@media (width > 768px) {
+    .mpp-disc-prom {
+        flex-direction: row;
+        /*justify-content: space-between*/
+    }
+}
+
+.mpp-delivery {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.mpp-delivery p {
+    font-size: .875rem;
+    margin: 0;
+}
+.mpp-delivery a {
+    text-decoration: underline;
+}
+.mpp-delivery a:hover {
+    text-decoration: none;
+}

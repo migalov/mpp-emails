@@ -1,0 +1,7 @@
+---
+const {size, bgColor = "transparent"} = Astro.props
+---
+
+<tr>
+    <td width="100%" height={size} bgColor={bgColor} style={`font-size: 0; ${bgColor ? `background-color: ${bgColor}` : `transparent`}`} class="mobile-col-padding"></td>
+</tr>

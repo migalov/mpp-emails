@@ -2,7 +2,7 @@
 const { href, underline = true, color = true } = Astro.props;
 ---
 
-<a target="_blank" href={href} style={`
+<a target="_blank" href={href} rel="noopener" style={`
     font-weight: inherit!important;
     font-size: inherit!important;
     text-decoration: ${!underline && "none"};
